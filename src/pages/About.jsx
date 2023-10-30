@@ -1,5 +1,5 @@
 function About() {
-    return <h1>Hello from About</h1>;
+    return <h1>hello from wild code school</h1>;
   }
   
   export default About;
