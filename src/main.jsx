@@ -7,6 +7,7 @@ import App from "./App";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Article from "./pages/Articles";
 
 // router creation
 
@@ -22,8 +23,26 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/articles/:id",
+        element: <Article />,
+      },
+      {
+        path: "/articles/:id/:name",
+        element: <Article />,
+      },
     ],
   },
+  // {
+  //   element: <Admin />,
+  //   path: "/admin",
+  //   children: [
+  //     {
+  //       path: "/user",
+  //       element : <User />
+  //     }
+  //   ]
+  // }
 ]);
 
 // rendering
